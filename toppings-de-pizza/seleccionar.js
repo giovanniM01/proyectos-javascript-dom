@@ -46,7 +46,7 @@ console.log("Elemento 0 -> " + toppings[0]);
 console.log("ID -> " + toppings[0].id);
 console.log("CLASS -> " + toppings[0].className);
 console.log(toppings[0].innerHTML);
-*/
+
 
 
 
@@ -60,7 +60,39 @@ console.log(misToppings);
 console.log("Tipo: " + typeof misToppings);
 
 
+//----------------------------------------------------------------------------
 
 
+//--------------------- OBTENER UN ELEMENTO con querySelector -----------------
+// querySelector("#id"); encontrar elemento por id
+const aceituna = document.querySelector("#aceitunas");
+console.log(aceituna);
+
+console.log("---");
+// querySelector(".class"); encontrar elemento por clase
+const ejemplo = document.querySelector("ul li.fondo-naranja");
+console.log(ejemplo);
+
+console.log("--Primer li con fondo no naranja--");
+const negacion = document.querySelector("ul li:not(.fondo-naranja)")
+console.log(negacion);
 
 //----------------------------------------------------------------------------
+*/
+
+//--------------------- OBTENER UN ELEMENTO con querySelectorAll -----------------
+const toppingFondoNaranja = document.querySelectorAll(".fondo-naranja");
+console.log(toppingFondoNaranja);
+console.log(typeof toppingFondoNaranja);
+console.log(toppingFondoNaranja.length);
+//--------------------------------------------------------------------------------
+
+/* 
+Seleccionar Elementos del DOM
+⌨️  Inicio
+⌨️  .getElementById()
+⌨️  .getElementsByClassName()
+⌨️  .getElementsByTagName()
+⌨️  .querySelector()
+⌨️  .querySelectorAll()
+*/
