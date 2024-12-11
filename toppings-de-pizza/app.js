@@ -1,5 +1,5 @@
 /*
-//-------------------------------OBTENER UN ELEMENTO POR SU ID-------------------------------
+//--------------------- OBTENER UN ELEMENTO POR SU ID -----------------------
 // getElementById()
 const contenedor = document.getElementById("contenedor");
 console.log(contenedor);
@@ -25,8 +25,8 @@ console.log(typeof titulo.innerText);
 
 // obtener la etiqueta del elemento seleccionado por id
 console.log("Etiqueta del elemento (id=titulo) -> "+titulo.tagName);
-//---------------------------------------------------------------------------------------
-*/
+//------------------------------------------------------------------------------
+
 
 //--------------------- OBTENER UN ELEMENTO POR SU CLASE -----------------------
 // getElementByClassName('clase');
@@ -46,3 +46,21 @@ console.log("Elemento 0 -> " + toppings[0]);
 console.log("ID -> " + toppings[0].id);
 console.log("CLASS -> " + toppings[0].className);
 console.log(toppings[0].innerHTML);
+*/
+
+
+
+//--------------------- OBTENER UN ELEMENTO POR SU TAG -----------------------
+// ahora veremos como acceder a elementos en base al nombre de su etiqueta html
+// etiquetas: h1, p, div, ul, ...
+// getElementByTagName()
+
+const misToppings = document.getElementsByTagName("li");
+console.log(misToppings);
+console.log("Tipo: " + typeof misToppings);
+
+
+
+
+
+//----------------------------------------------------------------------------
